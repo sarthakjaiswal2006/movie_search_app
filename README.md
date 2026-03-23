@@ -19,7 +19,7 @@ It allows users to search for movies and view details like posters, titles, and 
 
 * **HTML** – Structure
 * **CSS** – Styling
-* **JavaScript (Vanilla JS)** – Logic & API handling
+* **JavaScript ** – Logic & API handling
 * **OMDb API** – Movie data
 
 ---
