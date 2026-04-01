@@ -1,4 +1,4 @@
-import { API_KEY } from "./config.js";
+let API_KEY="7febc90ae377b841cee16a6991b13495"
 let currentPage = 1; 
 async function data() { 
   try {
