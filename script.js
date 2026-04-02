@@ -1,5 +1,6 @@
 let API_KEY="7febc90ae377b841cee16a6991b13495"
-let currentPage = 1; 
+let currentPage = 1;   
+let totalPages=1;
 async function data() { 
   try {
     let movieName = document.getElementById("movie_input").value.trim();
@@ -22,7 +23,7 @@ async function data() {
     moviesDiv.innerHTML = "";
 
     let movies = data1.results; 
-    let totalPages=data1.pages;
+    totalPages=data1.total_pages;
 
     if (movieName !== "" && language !== "") {
       movies = movies.filter(movie =>
@@ -75,7 +76,6 @@ document.getElementById("next").addEventListener("click", () => {
         data();
   }
 });
-
 document.getElementById("prev").addEventListener("click", () => {
   if (currentPage > 1) {
     currentPage--;
