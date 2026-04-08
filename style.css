@@ -1,80 +1,90 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-div#heading{ 
+
+body { 
+    color: white;
+    font-family: sans-serif;
+    background-color: black;
+}
+
+body.light {
+    background-color: white;
+    color: black;
+}
+
+#heading { 
     display: flex;
     flex-wrap: wrap; 
     justify-content: space-between;
     margin: auto; 
-    width: 50vw  
-}   
-input#movie_input{ 
-    width: 34vw; 
-    background: #1e1e1e; 
-    border-radius: 10px ; 
-    height: 30px;
-} 
-.hi{
-    background: #1e1e1e; 
-    border-radius: 10px ;  
-    color: white;  
-    font-family: 'Outfit', sans-serif; 
-    height: 40px;
-} 
-body { 
-    color: white;
-    font-family: 'Outfit', sans-serif;
-    font-weight: 300; 
-    background-color: black;   
-    opacity: 0;
-    animation: fadeUp 1.8s ease forwards;
+    width: 50vw;
 }
+
 #title {
     font-family: 'Anton', sans-serif;
-    font-size: 75px;
-} 
-div#movies{ 
+    font-size: 60px;
+}
+
+input, select {
+    background: #1e1e1e; 
+    border-radius: 10px;
+    color: white;
+    padding: 5px;
+}
+
+.hi {
+    background: #1e1e1e; 
+    border-radius: 10px;  
+    color: white;
+    padding: 8px;
+}
+
+body.light input,
+body.light select,
+body.light .hi {
+    background: #e0e0e0;
+    color: black;
+}
+
+#movies, #watchlistedmovies {
     display: flex; 
     flex-wrap: wrap; 
     justify-content: space-evenly;
-    border-radius: 10px; 
-    justify-content: space-evenly;
-}  
-div#watchlistedmovies{ 
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: space-evenly;
-    border-radius: 10px; 
-    justify-content: space-evenly;
-} 
-div.movie_card{ 
+}
+
+.movie_card { 
     margin-top: 20px;
     background: #1e1e1e;
     border-radius: 10px;
-} 
-button.wishlist-btn{
-    background-color: #00d4ff; 
-    border-radius: 10px; 
-    margin-top: 5px;
-}  
-button.clear-btn{
-    background-color: #00d4ff; 
-    border-radius: 10px; 
-    margin-top: 5px;
-} 
-div#page-control{   
-    width: 10vw;
-    margin: auto;
-} 
-.movie_card {
-  transition: transform 0.3s ease;
+    padding: 20px;
+    width: 250px;
+    transition: transform 0.3s ease;
 }
+
+body.light .movie_card {
+    background: #f0f0f0;
+}
+
 .movie_card:hover {
-  transform: scale(1.08);
+    transform: scale(1.08);
 }
-@keyframes fadeUp {
-    from {
-        opacity: 0;
-    } 
-    to{
-        opacity: 100;
-    }
-} 
+
+button.wishlist-btn,
+button.clear-btn {
+    background-color: #00d4ff;
+    border-radius: 10px;
+    margin-top: 5px;
+    width: 100%;
+    padding: 10px;
+}
+
+body.light button.wishlist-btn,
+body.light button.clear-btn {
+    background-color: #0077ff;
+    color: white;
+}
+
+#page-control {   
+    width: 200px;
+    margin: auto;
+    text-align: center;
+}
