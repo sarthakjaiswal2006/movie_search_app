@@ -22,6 +22,11 @@ It allows users to search for movies and view details like posters, titles, and 
 * **JavaScript** – Logic & API handling
 * **OMDb API** – Movie data
 
+--- 
+##  DEPLOYED LINK
+
+:- https://movie-search-app-five-rust.vercel.app/
+
 ---
 
 ## 📸 Demo
